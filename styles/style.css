@@ -128,7 +128,8 @@
 !Section Two style start from here
 -----------------------------------*/
 .section-two {
-  margin-bottom: 130px;
+  margin: 0 60px 0 130px;
+  padding-bottom: 100px;
 }
 .section-two-container {
   display: flex;
@@ -137,9 +138,42 @@
   justify-content: center;
   gap: 50px;
 }
-.section-two-container img {
+.section-two-container .experience-right {
+  position: relative;
+  width: 100%;
+}
+.experience-right img {
+  width: 100%;
+  height: 950px;
+  z-index: -100;
+  position: relative;
   width: 500px;
   height: 100%;
+}
+.experience-right .experience-btn {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background: #ff900e;
+  width: 190px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -65px;
+  z-index: 100;
+}
+.experience-right .experience-btn h1 {
+  font-size: 30px;
+}
+
+.experience-right .experience-btn p {
+  font-size: 13px;
 }
 .section-two-content {
   width: 586px;
@@ -160,8 +194,6 @@
   color: #727272;
   margin-bottom: 30px;
 }
-.section-two-content-box {
-}
 .content-box {
   padding-left: 20px;
   width: 514px;
@@ -169,6 +201,11 @@
   box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0,
     0.2em 0.2em 1em rgba(0, 0, 0, 0.1);
   padding: 15px 40px 30px 30px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.content-box:hover {
+  scale: 1.05;
 }
 .content-box-title {
   font-weight: 600;
@@ -180,9 +217,6 @@
   font-weight: 400;
   font-size: 16px;
   color: #727272;
-}
-.btn {
-  z-index: 1;
 }
 
 /* --------------------------------
@@ -216,6 +250,11 @@
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.2);
 }
 .card h4 {
   color: #424242;
@@ -253,10 +292,36 @@
   margin-bottom: 50px;
 }
 .section-four-logo {
-  height: 50px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  gap: 150px;
+  align-items: center;
+  padding-bottom: 130px;
+}
+.logos {
+  display: flex;
+  gap: 70px;
+}
+.logos img {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+.logos img:hover {
+  filter: brightness(100%);
+}
+/* --------------------------------
+!footer style start from here
+-----------------------------------*/
+footer {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff4e7;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #424242;
 }
