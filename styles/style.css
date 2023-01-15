@@ -3,12 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
 }
 .header{
   width: 100%;
   height: 100%;
   background-color: #FF900E1A;
-
+margin-bottom: 80px;
 }
 .nav{
   display: flex;
@@ -72,4 +73,113 @@
   padding:50px 0 0 50px;
   width: 80%;
   height: 60%;
+  margin-bottom: 50px;
+}
+/* --------------------------------
+!Section one style start from here
+-----------------------------------*/
+.section-one{
+  margin-bottom: 130px;
+}
+.section-one-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+    grid-gap: 60px;
+}
+
+.gallery img{
+  width: 200px;
+  height: 200px;
+}
+.section-one-image .gallery{
+  display: grid;
+  grid-template-columns:200px 200px;
+  grid-column-gap: 24px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+}
+.section-one-title{
+  width: 468px;
+  font-weight: 500;
+  font-size: 45px;
+  color: #727272;
+  padding-bottom: 20px;
+}
+.section-one-title span{
+  font-weight: 700;
+}
+.section-one-title .title-bolder{
+  color: #131313;
+}
+.section-one-title .title-bolder-yellow{
+  color: #FF900E;
+}
+.section-one-description{
+  width: 537px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  padding-bottom: 30px;
+}
+/* --------------------------------
+!Section Two style start from here
+-----------------------------------*/
+.section-two-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.section-two-container img{
+  width: 500px;
+  height: 100%;
+}
+.section-two-content{
+  width: 586px;
+  height: auto;
+}
+.section-two .section-two-title{
+  width: 468px;
+  border-left: 5px solid #FF900E;
+  height: 100px;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+.section-two-description{
+  width: 586px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 30px;
+}
+.section-two-content-box{
+
+}
+.content-box{
+  padding-left: 20px;
+  width: 514px;
+  height: 110px;
+  box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0 ,
+    0.2em 0.2em 1em rgba(0, 0, 0, 0.1);
+    padding: 15px 40px 30px 30px;
+}
+.content-box-title{
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 8px;
+  color: #131313;
+}
+.content-box-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+.btn{
+  z-index: 1;
 }
